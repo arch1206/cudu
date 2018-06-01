@@ -187,6 +187,77 @@ ul.nav{
     width: 3rem;
 }
 
+
+
+body
+{
+	background: #f1f1f1;
+	font-family: cursive;
+	margin: 0;
+	padding: 0;
+}
+.post
+{
+	width: 263px;
+	height: 200px;
+	position:relative;
+	cursor: default;
+}
+.post:hover .post-s{
+width:100%;
+}
+.post img {
+	display: block;
+	width: 100%;
+	height: 200px;
+}
+.post-s {
+	width: 0px;
+	height: 200px;
+	background: rgba(255,102,0,0.41);
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	transition: 0.7s ease;
+
+}
+.post-s h2{
+color:white;
+font-size:20px;
+border:6px solid white;
+padding:10px 30px;
+}
+.h_column {
+  float: left;
+  width:25%;
+  padding:0px;
+}
+
+/* Clear floats after image containers */
+.h_row : after {
+  content: "";
+  clear: both;
+  display: table;
+ 
+}
+.h_container
+{
+	margin-left:90px;
+	margin-right:90px;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+@media screen and (max-width: 500px) {
+    .h_column {
+        width: 100%;
+    }
+}
+
+
+
 /*.img-mask1:hover{*/
     /*-webkit-filter: grayscale(100%);filter: grayscale(100%);*/
      /*transform: translate(-50%,0%);*/
